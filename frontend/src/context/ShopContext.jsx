@@ -11,7 +11,7 @@ const ShopContextProvider = (props) => {
     const currency = '$';
     const delivery_fee = 10;
     // Keep local development usable when VITE_BACKEND_URL is not set.
-    const backendUrl = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000').replace(/\/$/, '')
+    const backendUrl = (import.meta.env.VITE_BACKEND_URL || 'https://shop-easy-l081.onrender.com').replace(/\/$/, '')
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
